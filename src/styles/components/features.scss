@@ -76,7 +76,11 @@
     }
 
     @media screen and (max-width: $max-xs) {
-      background: url('../img/features/feature-2-bg-mob.svg') no-repeat left;
+      background: none;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
