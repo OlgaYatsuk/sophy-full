@@ -5,6 +5,10 @@
   font-size: 34px;
   display: block;
 
+  &.is-visible {
+    animation: transformOpacityTitle 0.4s ease-out;
+  }
+
   @media screen and (max-width: $max-sm){
     font-size: 20px;
   }

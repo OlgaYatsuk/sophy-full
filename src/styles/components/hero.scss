@@ -38,6 +38,10 @@
   position: absolute;
   right: 0;
 
+  &.is-visible {
+    animation: transformOpacityButton 0.6s ease-out;
+  }
+
   @media screen and (max-width: $max-sm){
     position: relative;
     top: 0;
@@ -51,6 +55,10 @@
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 60px;
+
+  &.is-visible {
+    animation: transformOpacityText 0.6s ease-out;
+  }
 
   @media screen and (max-width: $max-sm){
     font-size: 14px;

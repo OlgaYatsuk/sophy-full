@@ -242,7 +242,7 @@ export const images = () => src(paths.images.src)
 		}),
 		imageminPngquant({
 			speed: 5,
-			quality: 75
+			quality: 90
 		}),
 		imageminZopfli({
 			more: true

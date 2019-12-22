@@ -3,6 +3,10 @@
   width: 100%;
   position: absolute;
 
+  &.is-visible {
+    animation: transformOpacityButton 0.6s ease-out;
+  }
+
   @media screen and (max-width: $max-sm){
     top: 92%;
   }

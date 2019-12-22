@@ -1,0 +1,49 @@
+@media screen and (min-width: $max-sm) {
+  @keyframes transformOpacityTitle {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes transformOpacityButton {
+    0% {
+      transform: translateY(90px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes transformOpacityHeader {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes transformOpacityText {
+    0% {
+      transform: translateY(70px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
