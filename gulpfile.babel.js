@@ -249,7 +249,7 @@ export const images = () => src(paths.images.src)
 		}),
 		imageminMozjpeg({
 			progressive: true,
-			quality: 70
+			quality: 90
 		}),
 		imagemin.svgo({
 			plugins: [

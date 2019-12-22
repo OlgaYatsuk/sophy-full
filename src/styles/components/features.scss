@@ -13,9 +13,9 @@
     max-width: 1150px;
 
     @media screen and (max-width: $max-sm) {
-      //max-width: 100%;
       position: relative;
       padding-top: 425px;
+      margin-top: 50px;
     }
   }
 
@@ -29,16 +29,15 @@
     }
 
     @media screen and (max-width: $max-sm) {
-      padding-top: 0;
+      padding-top: 20px;
 
       .feature__img {
-        left: 0;
+        left: -70px;
       }
     }
 
     .container {
       @media screen and (max-width: $max-sm) {
-        //max-width: 100%;
         padding-top: 275px !important;
       }
     }
@@ -71,7 +70,8 @@
 
       .feature__img {
         right: 0;
-        top: -50px;
+        top: -10px;
+        max-width: 440px;
       }
     }
 
@@ -112,7 +112,7 @@
 
       @media screen and (max-width: $max-sm) {
         position: relative;
-        padding-top: 340px;
+        padding-top: 240px;
       }
     }
 
@@ -139,6 +139,6 @@
 
   @media screen and (max-width: $max-sm) {
     width: 470px;
-    top: -100px;
+    top: -60px;
   }
 }
