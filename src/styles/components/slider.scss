@@ -3,6 +3,10 @@
   padding-bottom: 550px;
   position: relative;
 
+  @media screen and (min-width: 1800px) {
+    padding-top: 200px;
+  }
+
   @media screen and (max-width: $max-sm){
     padding-top: 0;
     top: -180px;

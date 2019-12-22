@@ -1,5 +1,5 @@
 .features {
-  @media screen and (max-width: $max-sm){
+  @media screen and (max-width: $max-sm) {
     position: relative;
     top: -130px;
   }
@@ -12,7 +12,7 @@
     align-items: center;
     max-width: 1150px;
 
-    @media screen and (max-width: $max-sm){
+    @media screen and (max-width: $max-sm) {
       //max-width: 100%;
       position: relative;
       padding-top: 425px;
@@ -21,6 +21,12 @@
 
   &:nth-child(1) {
     padding-top: 137px;
+
+    @media screen and (min-width: 1800px) {
+      .feature__img {
+        left: 80px;
+      }
+    }
 
     @media screen and (max-width: $max-sm) {
       padding-top: 0;
@@ -33,7 +39,7 @@
     .container {
       @media screen and (max-width: $max-sm) {
         //max-width: 100%;
-        padding-top: 275px!important;
+        padding-top: 275px !important;
       }
     }
   }
@@ -41,7 +47,24 @@
 
   &:nth-child(2) {
     padding: 420px 0 425px;
-    background: url('../img/features/feature-2-bg.svg') no-repeat left 70px;
+    position: relative;
+    background: url('../img/features/feature-2-bg.svg') no-repeat left top;
+
+    @media screen and (min-width: 1800px) {
+      .feature__img {
+        right: 80px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -70px;
+      background: url('../img/features/feature-2-right.svg') no-repeat right top;
+      width: 900px;
+      height: 1500px;
+    }
 
     @media screen and (max-width: $max-sm) {
       padding: 0 0 50px;
@@ -65,8 +88,14 @@
       padding-bottom: 0;
     }
 
+    @media screen and (min-width: 1800px) {
+      .feature__img {
+        left: 80px;
+      }
+    }
+
     .feature__img {
-      @media screen and (max-width: $max-sm){
+      @media screen and (max-width: $max-sm) {
         left: -30px;
       }
     }
@@ -81,7 +110,7 @@
     .container {
       flex-direction: row-reverse;
 
-      @media screen and (max-width: $max-sm){
+      @media screen and (max-width: $max-sm) {
         position: relative;
         padding-top: 340px;
       }
@@ -108,7 +137,7 @@
     animation: transformOpacityButton 0.6s ease-out;
   }
 
-  @media screen and (max-width: $max-sm){
+  @media screen and (max-width: $max-sm) {
     width: 470px;
     top: -100px;
   }
