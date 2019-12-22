@@ -1,0 +1,46 @@
+.title {
+  font-weight: bold;
+  color: $navy;
+  line-height: 1.4;
+  font-size: 34px;
+  display: block;
+
+  @media screen and (max-width: $max-sm){
+    font-size: 20px;
+  }
+}
+
+.title.title--hero {
+  font-size: 38px;
+  width: 100%;
+  margin-bottom: 40px;
+  max-width: 523px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: $max-sm){
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    display: block;
+    margin-top: 48px;
+  }
+}
+
+.title.title--centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title.title--section {
+  margin-bottom: 50px;
+}
+
+.title--contact {
+  margin-bottom: 40px;
+}
+
+.title--thanks {
+  text-align: center;
+}

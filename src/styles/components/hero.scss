@@ -1,0 +1,58 @@
+.hero {
+  padding-top: 255px;
+  padding-bottom: 352px;
+  background: url("../img/hero-bg.svg") no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media screen and (max-width: $max-sm){
+    background: url("../img/hero-bg-mob.svg") no-repeat;
+    padding-top: 102px;
+    padding-bottom: 190px;
+  }
+
+  &::before {
+    //content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../img/wave.svg") no-repeat top right;
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+
+    @media screen and (max-width: $max-sm){
+      z-index: 0;
+      right: -80px;
+      top: -130px;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.hero__img {
+  top: -140px;
+  position: absolute;
+  right: 0;
+
+  @media screen and (max-width: $max-sm){
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    margin-top: 100px;
+  }
+}
+
+.hero__text {
+  color: $grey-blue;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: $max-sm){
+    font-size: 14px;
+  }
+}

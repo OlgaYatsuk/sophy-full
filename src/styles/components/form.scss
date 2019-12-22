@@ -1,0 +1,100 @@
+.form {
+  width: 100%;
+  max-width: 590px;
+
+  @media screen and (max-width: $max-sm){
+    margin-top: 20px;
+    max-width: 100%;
+  }
+}
+
+.form__flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $max-sm){
+    flex-wrap: wrap;
+  }
+}
+
+.form__item {
+  margin-top: 30px;
+  flex: 1 0 auto;
+  max-width: 270px;
+
+  @media screen and (max-width: $max-sm) {
+    margin-right: 20px;
+    width: 100%;
+    max-width: 45%;
+  }
+
+  @media screen and (max-width: $max-xs){
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+.form__label {
+  font-size: 12px;
+  display: block;
+  color: $navy;
+  text-transform: uppercase;
+}
+
+//.form__side {
+//  flex: 1 0 auto;
+//  max-width: 270px;
+//
+//  @media screen and (max-width: $max-sm){
+//    max-width: 100%;
+//    margin-right: 20px;
+//
+//    &:last-child {
+//      margin-right: 0;
+//    }
+//  }
+//
+//  @media screen and (max-width: $max-xs){
+//    margin-right: 0;
+//  }
+//}
+
+.form__input {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  height: 40px;
+  padding: 16px 14px;
+  width: 100%;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  box-shadow: none;
+  background: $white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+  }
+
+  &.is-error {
+    border: 1px solid $red;
+
+    &::before {
+      background: url("../img/is-error.svg") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  &.is-valid {
+    &::before {
+      background: url("../img/is-valid.svg") no-repeat center;
+      background-size: cover;
+    }
+  }
+}

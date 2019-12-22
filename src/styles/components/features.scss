@@ -1,0 +1,111 @@
+.features {
+  @media screen and (max-width: $max-sm){
+    position: relative;
+    top: -130px;
+  }
+}
+
+.feature {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+
+    @media screen and (max-width: $max-sm){
+      //max-width: 100%;
+      position: relative;
+      padding-top: 425px;
+    }
+  }
+
+  &:nth-child(1) {
+    padding-top: 137px;
+
+    @media screen and (max-width: $max-sm) {
+      padding-top: 0;
+
+      .feature__img {
+        left: 0;
+      }
+    }
+
+    .container {
+      @media screen and (max-width: $max-sm) {
+        //max-width: 100%;
+        padding-top: 275px!important;
+      }
+    }
+  }
+
+
+  &:nth-child(2) {
+    padding: 420px 0 425px;
+    background: url('../img/features/feature-2-bg.svg') no-repeat left 70px;
+
+    @media screen and (max-width: $max-sm) {
+      padding: 0 0 50px;
+
+      .feature__img {
+        right: 0;
+        top: -50px;
+      }
+    }
+
+    @media screen and (max-width: $max-xs) {
+      background: url('../img/features/feature-2-bg-mob.svg') no-repeat left;
+    }
+  }
+
+  &:nth-child(3) {
+    padding-bottom: 440px;
+    background: url('../img/features/feature-3-bg.svg') repeat-x center 70px;
+
+    @media screen and (max-width: $max-sm) {
+      padding-bottom: 0;
+    }
+
+    .feature__img {
+      @media screen and (max-width: $max-sm){
+        left: -30px;
+      }
+    }
+
+    @media screen and (max-width: $max-md) {
+      background-position-y: -20px;
+      background-size: 603px 558px;
+    }
+  }
+
+  &:nth-child(odd) {
+    .container {
+      flex-direction: row-reverse;
+
+      @media screen and (max-width: $max-sm){
+        position: relative;
+        padding-top: 340px;
+      }
+    }
+
+    .feature__img {
+      left: -70px;
+      right: auto;
+    }
+  }
+
+  .title {
+    max-width: 450px;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.feature__img {
+  position: absolute;
+  right: -70px;
+
+  @media screen and (max-width: $max-sm){
+    width: 470px;
+    top: -100px;
+  }
+}

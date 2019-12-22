@@ -1,0 +1,123 @@
+.checkout-page {
+  padding-top: 142px;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background: url('../img/checkout-bg.svg') no-repeat center;
+  background-size: cover;
+
+  @media screen and (max-width: $max-lg){
+    background-size: contain;
+  }
+
+  @media screen and (max-width: $max-sm){
+    background: url('../img/checkout-mob.svg') no-repeat center;
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+}
+
+.checkout-page__flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $max-sm){
+    flex-direction: column;
+  }
+}
+
+.checkout__row {
+  display: flex;
+  font-size: 16px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.checkout__preview {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  max-width: 291px;
+  padding: 30px;
+  box-shadow: 0 1px 10px rgba(198, 206, 217, 0.5);
+  border-radius: 10px;
+  background: $white;
+
+  @media screen and (max-width: $max-sm){
+    order: -1;
+    max-width: 100%;
+  }
+}
+
+.checkout__preview-img {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+}
+
+.checkout__preview-title {
+  font-weight: bold;
+  color: $navy;
+  font-size: 18px;
+  margin-bottom: 210px;
+  line-height: 130%;
+}
+
+.checkout__preview-top {
+  border-bottom: 1px solid #EFEFEF;
+  padding-bottom: 15px;
+
+  .checkout__preview-text {
+    color: #3B434E;
+  }
+}
+
+.checkout__preview-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: $navy;
+}
+
+.checkout__price {
+  color: $grey-blue;
+}
+
+.checkout__label {
+  color: $grey-blue;
+  font-weight: bold;
+}
+
+.checkout__preview-price {
+  color: $grey-blue;
+  text-transform: uppercase;
+}
+
+.checkout__total {
+  font-weight: bold;
+  color: #3B434E;
+}
+
+.checkout__safety {
+  color: #626A75;
+  display: flex;
+  margin-top: 110px;
+  line-height: 1.4;
+  justify-content: flex-end;
+
+  @media screen and (max-width: $max-sm){
+    margin-top: 40px;
+    justify-content: flex-start;
+  }
+
+  svg {
+    margin-right: 10px;
+    min-width: 18px;
+    height: 22px;
+    display: inline-block;
+  }
+}

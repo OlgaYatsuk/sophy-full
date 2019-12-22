@@ -1,0 +1,29 @@
+.thanks {
+  padding-top: 200px;
+  background: url('../img/checkout-bg.svg') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+
+  @media screen and (max-width: $max-sm){
+    background: url('../img/thanks.svg') no-repeat center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.thanks__img {
+  display: block;
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}

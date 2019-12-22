@@ -1,0 +1,151 @@
+.about {
+  padding-top: 140px;
+  padding-bottom: 550px;
+  position: relative;
+
+  @media screen and (max-width: $max-sm){
+    padding-top: 0;
+    top: -180px;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('../img/slider/wave.svg') no-repeat center;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    bottom: 50px;
+    left: 0;
+
+    @media screen and (max-width: $max-sm){
+      background: none;
+    }
+  }
+}
+
+.slider {
+  max-width: 100%;
+
+  .slick-list,
+  .slick-track {
+    overflow: visible!important;
+  }
+}
+
+.slide {
+  .slider-count {
+    display: none;
+
+    @media screen and (max-width: $max-sm){
+      display: block;
+    }
+  }
+
+  .container {
+    @media screen and (max-width: $max-sm){
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+}
+
+.slide__img{
+  top: -350px;
+  position: absolute;
+  right: 0;
+
+  @media screen and (max-width: $max-sm){
+    max-width: 100%;
+    position: relative;
+    top: 40px;
+    object-fit: contain;
+    height: 490px;
+    order: -1;
+  }
+}
+
+.slide__img--long {
+  top: -250px;
+
+  @media screen and (max-width: $max-sm){
+  }
+}
+
+.arrow {
+  background: none;
+  border: 0;
+  position: absolute;
+  bottom: -50px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  path,
+  rect {
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+    path {
+      fill: darken($orange, 10%);
+    }
+
+    rect {
+      stroke: darken($orange, 10%);
+    }
+  }
+}
+
+.arrow--prev {
+  left: calc((100vw - 1240px) / 2);
+
+  @media screen and (min-width: 1600px) {
+    left: calc((100vw - 1420px) / 2);
+  }
+}
+
+.arrow--next {
+  left: calc((100vw - 1240px) / 2 + 120px);
+
+  @media screen and (min-width: 1600px) {
+    left: calc((100vw - 1420px) / 2 + 120px);
+  }
+}
+
+.slide__text {
+  width: 100%;
+  max-width: 335px;
+}
+
+.slide__text {
+  color: $grey-blue;
+  line-height: 2;
+  margin: 15px 0 30px;
+}
+
+.slide__info {
+  @media screen and (max-width: $max-sm){
+    padding: 0 30px;
+  }
+}
+
+.slider-count {
+  margin-bottom: 16px;
+  color: #D2D9E6;
+  font-size: 24px;
+  font-weight: bold;
+
+  @media screen and (max-width: $max-sm){
+    padding-left: 30px;
+  }
+}
+
+.slider-count--hide {
+  @media screen and (max-width: $max-sm){
+    display: none;
+  }
+}

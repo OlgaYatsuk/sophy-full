@@ -1,0 +1,59 @@
+.button {
+  color: $white;
+  border-radius: 26px;
+  display: inline-block;
+  padding: 15px;
+  outline: 0;
+  text-align: center;
+  border: 2px solid transparent;
+  width: 100%;
+  font-size: 14px;
+  max-width: 240px;
+  cursor: pointer;
+  min-width: 140px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.button--orange {
+  background-color: $orange;
+
+  &:hover {
+    border: 2px solid $orange;
+    background-color: $white;
+    color: $orange;
+  }
+}
+
+.button--green {
+  background-color: $green;
+
+  &:hover {
+    border: 2px solid $green;
+    background-color: $white;
+    color: $green;
+  }
+}
+
+.button--header {
+  padding: 11px;
+  max-width: 140px;
+
+  @media screen and (max-width: $max-md){
+    display: none;
+  }
+}
+
+.button--form {
+  margin-top: 106px;
+  max-width: 180px;
+}
+
+.button--checkout {
+  margin-top: 90px;
+
+  @media screen and (max-width: $max-sm){
+    margin-top: 40px;
+  }
+}
