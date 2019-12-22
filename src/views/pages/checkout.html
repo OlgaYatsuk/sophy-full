@@ -31,7 +31,7 @@
         </div>
         <div class="form__item">
           <label class="form__label js-phone">Phone</label>
-          <input required type="text" class="form__input">
+          <input pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required type="text" class="form__input">
         </div>
         <div class="form__item">
           <label class="form__label js-address">Address</label>
@@ -39,7 +39,7 @@
         </div>
         <div class="form__item">
           <label class="form__label js-zip">Zip</label>
-          <input required type="text" class="form__input">
+          <input required pattern="\d+" type="text" class="form__input">
         </div>
         <div class="form__item">
           <label class="form__label js-city">City</label>
