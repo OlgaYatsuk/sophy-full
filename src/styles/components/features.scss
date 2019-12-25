@@ -32,7 +32,7 @@
       padding-top: 20px;
 
       .feature__img {
-        left: -70px;
+        left: -20px;
       }
     }
 
@@ -50,6 +50,8 @@
     background: url('../img/features/feature-2-bg.svg') no-repeat left top;
 
     @media screen and (min-width: 1800px) {
+      background: url('../img/features/feature-2-bg.svg') no-repeat left top;
+
       .feature__img {
         right: 80px;
       }
@@ -58,28 +60,26 @@
     &::before {
       content: '';
       position: absolute;
-      right: 0;
+      right: -40px;
       top: -70px;
       background: url('../img/features/feature-2-right.svg') no-repeat right top;
       width: 900px;
       height: 1500px;
+
     }
 
     @media screen and (max-width: $max-sm) {
       padding: 0 0 50px;
-
-      .feature__img {
-        right: 0;
-        top: -10px;
-        max-width: 440px;
-      }
-    }
-
-    @media screen and (max-width: $max-xs) {
-      background: none;
+      background: url('../img/features/feature-2-bg-mob.svg') no-repeat right -100px;
 
       &::before {
         display: none;
+      }
+
+      .feature__img {
+        right: -18px;
+        top: -10px;
+        max-width: 440px;
       }
     }
   }
@@ -90,6 +90,7 @@
 
     @media screen and (max-width: $max-sm) {
       padding-bottom: 0;
+      background: url('../img/waves-mob.png') repeat-x center 42px;
     }
 
     @media screen and (min-width: 1800px) {
@@ -121,7 +122,7 @@
     }
 
     .feature__img {
-      left: -70px;
+      left: -50px;
       right: auto;
     }
   }

@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  margin-right: 50px;
+
+  @media screen and (max-width: $max-sm){
+    margin-top: 45px;
+    order: 1;
+  }
+}
+
+.social__link {
+  width: 24px;
+  height: 24px;
+}
+
+.social__link--fb {
+  background: url('../img/fb.svg') no-repeat center;
+  margin-right: 62px;
+}
+
+.social__link--inst {
+  background: url('../img/inst.svg') no-repeat center;
+}
+

@@ -13,6 +13,7 @@
 
   @media screen and (max-width: $max-sm){
     background: url('../img/bottom-bg-mob.svg') no-repeat;
+    background-position-y: -37px;
     background-size: cover;
     top: 0;
     padding-top: 80px;

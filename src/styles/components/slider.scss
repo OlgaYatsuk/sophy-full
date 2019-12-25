@@ -90,6 +90,10 @@
   cursor: pointer;
   transition: all 0.2s;
 
+  @media screen and (max-width: $max-sm){
+    bottom: -30px;
+  }
+
   path,
   rect {
     transition: all 0.3s;
@@ -114,6 +118,10 @@
   @media screen and (min-width: 1600px) {
     left: calc((100vw - 1420px) / 2);
   }
+
+  @media screen and (max-width: $max-sm){
+    left: 12px;
+  }
 }
 
 .arrow--next {
@@ -121,6 +129,10 @@
 
   @media screen and (min-width: 1600px) {
     left: calc((100vw - 1420px) / 2 + 120px);
+  }
+
+  @media screen and (max-width: $max-sm){
+    left: 142px;
   }
 }
 
