@@ -23,6 +23,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    transform: translate(80px, -80px);
     background: url("../img/wave.svg") no-repeat top right;
     width: 600px;
     height: 600px;
@@ -30,8 +31,8 @@
 
     @media screen and (max-width: $max-sm) {
       z-index: 0;
-      right: -80px;
-      top: -130px;
+      transform: translateX(80px);
+      top: -30px;
     }
   }
 
