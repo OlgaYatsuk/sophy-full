@@ -19,7 +19,7 @@
   }
 
   &::before {
-    content: '';
+    //content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -45,6 +45,8 @@
   top: -140px;
   position: absolute;
   right: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 
   &.is-visible {
     animation: transformOpacityButton 0.6s ease-out;
@@ -56,13 +58,21 @@
     max-width: 100%;
     margin-top: 100px;
   }
+
+  @media screen and (min-width: $max-sm) and (max-width: $max-lg) {
+    max-width: 50%;
+  }
 }
 
 .hero__text {
   color: $grey-blue;
+  z-index: 1;
+  position: relative;
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 60px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 
   &.is-visible {
     animation: transformOpacityText 0.6s ease-out;

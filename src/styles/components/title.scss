@@ -4,6 +4,8 @@
   line-height: 1.4;
   font-size: 34px;
   display: block;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 
   &.is-visible {
     animation: transformOpacityTitle 0.4s ease-out;
@@ -20,6 +22,8 @@
   margin-bottom: 40px;
   max-width: 523px;
   text-transform: uppercase;
+  z-index: 1;
+  position: relative;
 
   @media screen and (max-width: $max-sm){
     font-size: 23px;

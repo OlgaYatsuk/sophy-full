@@ -1,4 +1,7 @@
 .features {
+  max-width: 100vw;
+  overflow-x: hidden;
+
   @media screen and (max-width: $max-sm) {
     position: relative;
     top: -130px;
@@ -6,6 +9,10 @@
 }
 
 .feature {
+  @media screen and (max-width: $max-sm){
+    margin-top: 120px;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -21,6 +28,7 @@
 
   &:nth-child(1) {
     padding-top: 137px;
+    margin-top: 0;
 
     @media screen and (min-width: 1800px) {
       .feature__img {
@@ -137,12 +145,18 @@
 .feature__img {
   position: absolute;
   right: -70px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 
   &.is-visible {
     animation: transformOpacityButton 0.6s ease-out;
   }
 
-  @media screen and (max-width: $max-sm) {
+  @media screen and (min-width: $max-sm) and (max-width: $max-lg) {
+    max-width: 50%;
+  }
+
+    @media screen and (max-width: $max-sm) {
     width: 470px;
     top: -60px;
   }

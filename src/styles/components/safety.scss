@@ -4,15 +4,15 @@
   @media screen and (max-width: $max-sm){
     padding-top: 0;
     position: relative;
-    top: -30px;
   }
 }
 
 .safety-items {
-  //justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 
   &.is-visible {
     animation: transformOpacityButton 0.6s ease-out;

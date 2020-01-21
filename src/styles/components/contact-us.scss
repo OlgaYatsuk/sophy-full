@@ -29,12 +29,14 @@
   position: absolute;
   top: 135px;
   right: 100px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 
   &.is-visible {
     animation: transformOpacityButton 0.6s ease-out;
   }
 
-  @media screen and (max-width: $max-sm){
+  @media screen and (max-width: $max-md){
     max-width: 50%;
   }
 

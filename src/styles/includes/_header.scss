@@ -5,6 +5,8 @@
   padding-top: 28px;
   width: 100%;
   z-index: 2;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 
   &.is-visible {
     animation: transformOpacityHeader 0.5s ease-out;

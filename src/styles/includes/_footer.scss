@@ -14,6 +14,10 @@
   .navigation {
     margin-left: 50px;
 
+    @media screen and (min-width: $max-xs) and (max-width: $max-md){
+      display: none;
+    }
+
     @media screen and (max-width: $max-sm){
       display: flex;
       margin-left: 0;
